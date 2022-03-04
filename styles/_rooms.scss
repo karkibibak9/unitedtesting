@@ -1,0 +1,179 @@
+.overlay {
+    position: relative;
+    z-index: 0;
+}
+.overlay::before {
+    position: absolute;
+    content: "";
+    background-color: #1f1f1f;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+// video_area
+.video_bg {
+    background-image: url("https://i.imgur.com/vUg4nwF.png");
+    background-attachment: fixed;
+}
+.video_area {
+    padding: 250px 0;
+    background-size: cover;
+    background-position: center center;
+    .video_area_inner {
+        span {
+            font-size: 14px;
+            color: #fff;
+        }
+        h3 {
+            font-size: 46px;
+            color: #fff;
+            line-height: 56px;
+            font-weight: 400;
+            margin-top: 12px;
+            margin-bottom: 28px;
+        }
+        a {
+            width: 60px;
+            height: 60px;
+            background: #fff;
+            line-height: 60px;
+            font-size: 15px;
+            color: #009dff;
+            display: inline-block;
+            @include border-radius(50%);
+            i {
+                position: relative;
+                left: 2px;
+            }
+        }
+    }
+}
+@include media-breakpoint-up(sm) {
+    .video_area {
+        padding: 100px 0;
+        .video_area_inner {
+            h3 {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+.our_accommodations {
+    padding: 93px 0;
+    display: block;
+    overflow: hidden;
+
+    .rooms_here {
+        .single_rooms {
+            position: relative;
+            width: 50%;
+            &::before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                content: "";
+                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,000000+100 */
+                background: #ffffff; /* Old browsers */
+                background: -moz-linear-gradient(
+                    top,
+                    #ffffff 0%,
+                    #000000 77%
+                ); /* FF3.6-15 */
+                background: -webkit-linear-gradient(
+                    top,
+                    #ffffff 0%,
+                    #000000 77%
+                ); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(
+                    to bottom,
+                    #ffffff 0%,
+                    #000000 77%
+                ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+                z-index: 1;
+                opacity: 0.5;
+            }
+            float: left;
+            .room_thumb {
+                position: relative;
+                overflow: hidden;
+                // z-index: 8;
+                img {
+                    width: 100%;
+                    @include transform(scale(1));
+                    @include transition(0.5s);
+                }
+                .room_heading {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0px;
+                    padding: 60px 60px 47px 60px;
+                    span {
+                        font-size: 14px;
+                        color: #ffffff;
+                        margin-bottom: 9px;
+                        display: block;
+                        position: relative;
+                        z-index: 8;
+                    }
+                    h3 {
+                        font-size: 30px;
+                        color: #fff;
+                        position: relative;
+                        z-index: 8;
+                    }
+                    a {
+                        color: #fff;
+                        text-transform: capitalize;
+                        font-weight: 600;
+                        position: relative;
+                        z-index: 8;
+                        @include transform(translateY(-40px));
+                        opacity: 0;
+                        visibility: hidden;
+                        &:hover {
+                            color: #009dff;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                img {
+                    width: 100%;
+                    @include transform(scale(1.1));
+                }
+                .room_heading {
+                    a {
+                        @include transform(translateY(0px));
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(md) {
+    .our_accommodations {
+        padding-top: 0;
+        .rooms_here {
+            .single_rooms {
+                width: 100%;
+                margin-bottom: 30px;
+
+                .room_thumb {
+                    .room_heading {
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

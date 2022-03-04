@@ -1,0 +1,37 @@
+
+.herrro {
+    width:50%;
+      
+    }
+    .article {
+      display:flex;
+      align-items:center;
+    }
+    
+      .txt{
+        padding:20px 50px;
+      flex:1;
+        text-align:center;
+      }
+    
+    .article:nth-child(1) {    /** Ce selecteur n'est pas utile ici car il n'y a qu'un .article */
+      background-color:#82a9ce;        
+      color:white;
+    
+     
+    }
+    
+    .paddle:hover{ /* Pas utile non plus car pas e class .paddle dans le html */
+     color:orange;
+    }
+    
+    @media screen and (max-width: 720px) {
+      .txt{
+        text-align:center;
+        ; 
+      }
+      .article{
+        display:flex; /** Cette règle n'est pas utile car elle est déja spécifiée en dehors de la media queries **/
+        flex-direction:column;
+      } 
+    }

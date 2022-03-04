@@ -1,0 +1,13 @@
+@mixin transform($transforms) {
+    -webkit-transform: $transforms;
+    -moz-transform: $transforms;
+    -ms-transform: $transforms;
+    transform: $transforms;
+}
+
+@mixin transition($args: all 0.6s ease-in 0s) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}

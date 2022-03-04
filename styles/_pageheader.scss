@@ -1,0 +1,32 @@
+.page_header_bg {
+    background: url("https://i.imgur.com/y5FgA1o.jpg?1");
+}
+.page_header_bg_rooms {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("/img/banner/roomss.jpg") no-repeat;
+}
+.page_header_bg_2 {
+    background: url("/img/banner/bradcam3.png");
+}
+.page_header {
+    padding: 170px;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding: 249px 0 159px 0;
+    h3 {
+        font-size: 60px;
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: 0;
+        text-transform: capitalize;
+    }
+}
+@include media-breakpoint-down(md) {
+    .page_header {
+        padding: 150px 0;
+        h3 {
+            font-size: 30px;
+        }
+    }
+}

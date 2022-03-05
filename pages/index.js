@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import Image from 'next/image'
+// import Head from 'next/head'
+// import Image from 'next/image'
 import { Fragment } from 'react'
 import Facilty from '../components/faculty'
 // import styles from '../styles/Home.module.css'

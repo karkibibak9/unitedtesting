@@ -13,9 +13,8 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       <Footer />
       <MessengerCustomerChat
-        // pageId= "101432741791780"
-        pageId={process.env.FB_PAGE_ID}
-        appId= {process.env.FB_APP_IDS}
+        pageId= "101432741791780"
+        appId= "4818713644884190"
         themeColor= '#ffafbd'
         // htmlRef="<REF_STRING>"
       />

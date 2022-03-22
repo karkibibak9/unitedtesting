@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Col, Container, Row, Card } from 'react-bootstrap';
 import styles from './contact.module.scss'
 
 const StaticForm = () => {
@@ -52,6 +53,55 @@ const StaticForm = () => {
   };
   return (
     <div>
+      
+      <Container className='p-3'>
+        <Row>
+        <Col md='auto'>
+            <Card border="info">
+                <Card.Header>Number</Card.Header>
+                <Card.Body>
+                  {/* <Card.Title>Number</Card.Title> */}
+                  <Card.Text>
+                  <Col><h3><a className='text-muted' type="tel" href="tel:046501703">046-501703</a></h3></Col>
+                  </Card.Text>
+                </Card.Body>
+            </Card>
+        </Col>
+        <Col md='auto'>
+            <Card border="info" >
+                <Card.Header>Email</Card.Header>
+                <Card.Body>
+                  {/* <Card.Title>Number</Card.Title> */}
+                  <Card.Text>
+                  <Col><h3><a className='text-muted' type="email" href="mailto:hotelunitedinn77@gmail.com">hotelunitedinn77@gmail.com</a></h3></Col>
+                  </Card.Text>
+                </Card.Body>
+            </Card>
+        </Col>
+        <Col md='auto'>
+            <Card border="info">
+                <Card.Header>Address</Card.Header>
+                <Card.Body>
+                  {/* <Card.Title>Number</Card.Title> */}
+                  <Card.Text>
+                  <Col><h3><a className='text-muted' href='https://g.page/hotel-united?share'>E - W Hwy, Lalbandi 45801, Sarlahi</a></h3></Col>
+                  </Card.Text>
+                </Card.Body>
+            </Card>
+        </Col>
+        {/* <Col><h3><a type="email" href="email:hotelunitedinn77@gmail.com">hotelunitedinn77@gmail.com</a></h3></Col> */}
+        {/* <Col><h3><a className='text-muted' href='https://g.page/hotel-united?share'>E - W Hwy, Lalbandi 45801, Sarlahi</a></h3></Col> */}
+        </Row>
+      </Container>
+       <Container>
+  <Row className="justify-content-md-center auto themeColor">
+    <Col>
+    <Card bg="info">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14212.823688254408!2d85.627012!3d27.0552473!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x828c2d4e7a7ce818!2sHotel%20United%20Inn!5e0!3m2!1sen!2snp!4v1647598712926!5m2!1sen!2snp" width="100%" height="650" style={{border:0,padding:10}}  allowfullscreen="" loading="lazy"></iframe>
+    </Card>
+    </Col>
+  </Row>
+</Container>
       <div className='section'>
         <div className='container'>
           <div className='columns'>
@@ -80,6 +130,7 @@ const StaticForm = () => {
               >
                 <div className={styles.contact}>
                   <h2>Contact Form</h2>
+                  
                   <form
                     action='https://api.staticforms.xyz/submit'
                     method='post'
@@ -154,6 +205,7 @@ const StaticForm = () => {
           </div>
         </div>
       </div>
+     
     </div>
   );
 };

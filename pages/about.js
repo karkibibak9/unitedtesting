@@ -6,7 +6,7 @@ import PageHeader from '../components/pageHeader';
 const About = () => {
     return (
         <Fragment>
-            <PageHeader title={'About Us'} />
+            <PageHeader title={'About Us'} /> 
             <section>
                 <AboutUs/>
             <Facilty/> 

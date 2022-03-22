@@ -8,6 +8,7 @@ const footer = () => {
                 <div className="row">
                     <div className="col-sm-6 col-md-3 item">
                         <h3><a className='text-muted' href='https://g.page/hotel-united?share'>E - W Hwy, Lalbandi 45801, Sarlahi</a></h3>
+                        <h3><a type="tel" href="tel:046501703">046-501703</a></h3>
                         <ul>
                             <li><a href="./rooms">Rooms</a></li>
                             <li><a href="./contact">Contact</a></li>

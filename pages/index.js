@@ -2,6 +2,7 @@
 // import Image from 'next/image'
 import { Fragment } from 'react'
 import Facilty from '../components/faculty'
+import Room from '../components/room'
 // import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -12,10 +13,10 @@ export default function Home() {
           <h3>Star Family Friendly Hotel</h3>
 
 
-
-          <button type="button" className="btn btn-outline-secondary btn-lg my-3" data-toggle="modal" data-target="#myModal">
-            Book A Room
-          </button>
+          <a href='./rooms'>
+          <button type="button" className="btn btn-outline-secondary btn-lg my-3">
+            Book A Room 
+          </button></a>
 
         </div>
       </main>

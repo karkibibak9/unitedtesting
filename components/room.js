@@ -79,79 +79,76 @@ const Room = () => {
 // background: linear-gradient(to right, #ffafbd, #ffc3a0);
 
 
-  const [show, setShow] = useState(false);
+  let [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
   const [RoomDes, SetRoomDes] = useState([
-    
     {
-      image: "https://i.imgur.com/dJ9RVYv.jpg",
-      images: "https://i.imgur.com/JVGd1IL.jpg",
-    title: "Super-Delux Room", 
-    discription: "Master Double Bed With Bathing Tub." ,
-    discription1: "Single Double Bed With A/c and Bathing Tub." ,
-    discription2: "Multichannel color 32' Flat LCD Television." ,
-    id:3 
-    },
-    {
-      image: "https://i.imgur.com/PDk0ON5.jpg",
-      images: "https://i.imgur.com/Sqk98dG.jpg",
-    title: "Delux Room", 
-    discription: "Double Bed Room With A/c and Bath Tub." ,
-    discription1: "Single Double Bed With Centralized Air Conditioning" ,
-    discription2: "Large screen LED TV." ,
-    id:4 
-    },
-    {
-      image: "https://i.imgur.com/1zF8E5x.jpg",
-      images: "https://i.imgur.com/aYrwHsr.jpg",
-      title: "Family Rooms", 
-      discription: "Master Double Bed." ,
-      discription1: "Single Double Bed With Flat Screen TV." ,
-    discription2: "Room comes with a work desk and Air Condition." ,
-    id:2 
-    },
-    {
-      image: "https://i.imgur.com/4T6EqYV.jpg",
-      images: "https://i.imgur.com/dJ9RVYv.jpg",
-      title: 'Couple Room', 
-      discription: "Master Double Bed Room with A/c." ,
-      discription1: "Single Double Bed With A/c and Bathing Tub." ,
-      discription2: "we have best coupple rooms with full ac at low price ." ,
-      id:1 
-    },
-    
-    {
-      image: "https://i.imgur.com/LEGScbw.jpg",
-      images: "https://i.imgur.com/KUR7sEF.jpg",
-    title: "Standard Room", 
-    discription: "Double Bed Room With A/c in cheapest price." ,
-    discription1: "Single Double Bed With large Screen TV. " ,
-    discription2: "we have best standard rooms with full ac at low price." ,
-    id:8
-    },
-    {
-      image: "https://i.imgur.com/J7ilzGF.jpg",
-      images: "https://i.imgur.com/hCkCYwB.jpg",
-    title: "Meeting Hall 'A'",
-    discription: "Number Of People: 25" ,
-    discription1: "Multichannel color 32' Flat LCD Television." ,
-    discription2: "Quite Enviroment With Centralized Air Conditioning" ,
-    id:98 
-  },
-  {
-    image: "https://i.imgur.com/YayU7vb.jpg",
-    images: "https://i.imgur.com/hCkCYwB.jpg",
-  title: "Meeting  'B'",
-  discription: "Number Of People: 60" ,
-  discription1: "large HD 1080p Display Projector With Quality Sound" ,
-  discription2: "Quite Enviroment With Centralized Air Conditioning" ,
-  id:99
-}
-  ]);
-
+          image: "https://i.imgur.com/dJ9RVYv.jpg",
+          images: "https://i.imgur.com/JVGd1IL.jpg",
+        title: "Super-Delux Room", 
+        discription: "Master Double Bed With Bathing Tub." ,
+        discription1: "Single Double Bed With A/c and Bathing Tub." ,
+        discription2: "Multichannel color 32' Flat LCD Television." ,
+        id:3 
+        },
+        {
+          image: "https://i.imgur.com/PDk0ON5.jpg",
+          images: "https://i.imgur.com/Sqk98dG.jpg",
+        title: "Delux Room", 
+        discription: "Double Bed Room With A/c and Bath Tub." ,
+        discription1: "Single Double Bed With Centralized Air Conditioning" ,
+        discription2: "Large screen LED TV." ,
+        id:4 
+        },
+        {
+          image: "https://i.imgur.com/1zF8E5x.jpg",
+          images: "https://i.imgur.com/aYrwHsr.jpg",
+          title: "Family Rooms", 
+          discription: "Master Double Bed." ,
+          discription1: "Single Double Bed With Flat Screen TV." ,
+        discription2: "Room comes with a work desk and Air Condition." ,
+        id:2 
+        },
+        {
+          image: "https://i.imgur.com/4T6EqYV.jpg",
+          images: "https://i.imgur.com/dJ9RVYv.jpg",
+          title: 'Couple Room', 
+          discription: "Master Double Bed Room with A/c." ,
+          discription1: "Single Double Bed With A/c and Bathing Tub." ,
+          discription2: "we have best coupple rooms with full ac at low price ." ,
+          id:1 
+        },
+        
+        {
+          image: "https://i.imgur.com/LEGScbw.jpg",
+          images: "https://i.imgur.com/KUR7sEF.jpg",
+        title: "Standard Room", 
+        discription: "Double Bed Room With A/c in cheapest price." ,
+        discription1: "Single Double Bed With large Screen TV. " ,
+        discription2: "we have best standard rooms with full ac at low price." ,
+        id:8
+        },
+        {
+          image: "https://i.imgur.com/J7ilzGF.jpg",
+          images: "https://i.imgur.com/hCkCYwB.jpg",
+        title: "Meeting Hall 'A'",
+        discription: "Number Of People: 25" ,
+        discription1: "Multichannel color 32' Flat LCD Television." ,
+        discription2: "Quite Enviroment With Centralized Air Conditioning" ,
+        id:98 
+      },
+      {
+        image: "https://i.imgur.com/YayU7vb.jpg",
+        images: "https://i.imgur.com/hCkCYwB.jpg",
+      title: "Meeting  'B'",
+      discription: "Number Of People: 60" ,
+      discription1: "large HD 1080p Display Projector With Quality Sound" ,
+      discription2: "Quite Enviroment With Centralized Air Conditioning" ,
+      id:99
+    }
+      ]);
     return ( 
         <div>
           <div>
@@ -180,7 +177,9 @@ const Room = () => {
               <div className="fist_content d-flex align-items-center  mb-3 mb-md-0">
 
                 <div>
+                  
                   <h2>{RoomDes.title}</h2>
+                  <ul>
                   <p>
                     <li> { RoomDes.discription } </li>
                   </p>
@@ -189,11 +188,11 @@ const Room = () => {
                   </p>
                   <p>
                     <li> { RoomDes.discription2 } </li>
-                  </p>
+                  </p></ul>
                   {/* <button type="button" className="btn btn-outline-secondary btn-lg my-3" data-toggle="modal" data-target="#myModal">
            <a className='text-danger'> Book A Room</a>
           </button> */}
-                    <Button className="btn btn-lg my-3" onClick={handleShow}>Book A Room</Button>
+                    <Button className="btn btn-lg my-3" id='bookARoom' onClick={handleShow}>Book</Button>
 
     </div>
               </div>
@@ -222,7 +221,7 @@ const Room = () => {
                     : 'is-hidden'
                 }
               >
-                <p className="d-flex justify-content-center">{response.message}</p>
+                <p className="d-flex justify-content-center bg-danger text-white">{response.message}</p>
               </div>
               <div
                 className={
@@ -257,7 +256,7 @@ const Room = () => {
           </div>
           <div className="form-group">
               <label htmlFor="exampleFormControlSelect1">Room Type</label>
-              <select className="form-control" onChange={handleChanges} name='roomType'>
+              <select className="form-control" onChange={handleChanges} name='roomType' required>
                 <option>Super-Delux Room</option>
                 <option>Delux Room</option>
                 <option>Family Rooms</option>

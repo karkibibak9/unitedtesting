@@ -8,7 +8,7 @@ import {Fragment} from 'react';
 const Contact = () => {
     return ( 
         <Fragment>
-             <PageHeader title={'Our Accommodations'} bgclass={'page_header_bg_rooms'} >
+             <PageHeader title={'Contact Us!'} bgclass={'page_header_bg_rooms'} >
                 
             </PageHeader>
         <section>

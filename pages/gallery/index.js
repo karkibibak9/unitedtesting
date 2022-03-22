@@ -1,9 +1,9 @@
-import { Fragment, useState,  useCallback, useEffect } from "react";
+import React, { Fragment, useState,  useCallback, useEffect } from "react";
 import PageHeader from "../../components/pageHeader";
 import Gallerys from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images"
 // import { photos } from "./source";
-
+// const OtherComponent = React.lazy(() => import('./OtherComponent'));
 const Gallery = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);

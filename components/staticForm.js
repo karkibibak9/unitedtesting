@@ -55,7 +55,7 @@ const StaticForm = () => {
     <div>
       
       <Container className='p-3'>
-        <Row>
+        <Row className='d-flex justify-content-between'>
         <Col md='auto'>
             <Card border="info">
                 <Card.Header>Number</Card.Header>
@@ -97,7 +97,7 @@ const StaticForm = () => {
   <Row className="justify-content-md-center auto themeColor">
     <Col>
     <Card bg="info">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14212.823688254408!2d85.627012!3d27.0552473!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x828c2d4e7a7ce818!2sHotel%20United%20Inn!5e0!3m2!1sen!2snp!4v1647598712926!5m2!1sen!2snp" width="100%" height="650" style={{border:0,padding:10}}  allowfullscreen="" loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14212.823688254408!2d85.627012!3d27.0552473!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x828c2d4e7a7ce818!2sHotel%20United%20Inn!5e0!3m2!1sen!2snp!4v1647598712926!5m2!1sen!2snp" width="100%" height="450" style={{border:0,padding:10}}  allowfullscreen="" loading="lazy"></iframe>
     </Card>
     </Col>
   </Row>

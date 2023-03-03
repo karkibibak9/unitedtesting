@@ -16,7 +16,7 @@ const Room = () => {
     checkIn: '',
     checkOut: '',
     replyTo: '@', // this will set replyTo of email to email address entered in the form
-    accessKey: '3535f053-33b7-446c-af7a-b1edbed34330' // get your access key from https://www.staticforms.xyz
+    accessKey: '690c882f-fa88-4778-b4fe-c75af5349507' // get your access key from https://www.staticforms.xyz
   });
 
   const [response, setResponse] = useState({
